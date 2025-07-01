@@ -3,7 +3,7 @@
 ## parameters: taskId detectionId outputFile
 import sys, os, ujson
 
-MSCCD_ROOT = "/Users/syu/workspace/MSCCD/"
+MSCCD_ROOT = "./"
 def cloneListGeneration(clonePath):
     res = []
     for cloneLine in open(clonePath, "r").readlines():
