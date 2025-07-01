@@ -12,6 +12,14 @@ MSCCD は /root/MSCCD にあります．
 
 最新の MSCCD に更新するには **git pull** を実行してください．
 
+./dockerImage直下にダウンロードしてください
+
+```
+docker compose -d
+```
+で動作します．
+
+
 ## Environment dependence
 
 MSCCD は Ubuntu 18.04LTS / MacOS Monterey　でテスト済みです．

@@ -1,0 +1,9 @@
+services:
+  hayato-n-MSCCD:
+    build:
+      dockerfile: Dockerfile
+    image: hayato-n-msccd
+    container_name: hayato-n-msccd
+    tty: true
+    volumes:
+      - .:/works

@@ -12,3 +12,4 @@ getCodeNetRes.py
 */__pycache__
 */.vscode
 */.settings
+dockerImage/*
