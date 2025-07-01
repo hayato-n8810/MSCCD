@@ -58,7 +58,7 @@ if __name__ == "__main__":
     MSCCD_ROOT = sys.path[0][:-7]    
     taskId = sys.argv[1]
     detectionId = sys.argv[2]
-    outputFile = sys.argv[3]
+    outputFile = f"./result/task{taskId}/detection{detectionId}/blockPair.csv"
     
     # MSCCD_ROOT = "./"
     # taskId = '3'
@@ -106,6 +106,23 @@ if __name__ == "__main__":
         if titleMsg[-1] == ",":
             titleMsg = titleMsg[:-1] + "\n"
         
+        if not os.path.exists(outputFile):
+            # ディレクトリ部分を抽出
+            dir_path = os.path.dirname(outputFile)
+
+            # ディレクトリが存在しない場合は作成
+            if not os.path.exists(dir_path):
+                os.makedirs(dir_path)
+
+            # 空ファイルを作成
+            with open(outputFile, 'w') as f:
+                pass
+
+            print(f"{outputFile} を作成しました。")
+        else:
+            print(f"{outputFile} は既に存在します。")
+
+
         with open(outputFile, "w") as f:
             # f.write(titleMsg)
             for clone in cloneListArr:

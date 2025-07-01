@@ -109,14 +109,16 @@ ANTLR4.8にいくつかのインターフェースとメソッドを追加し、
 
 + **scripts/blockPairOutput.py**：CSV形式の出力ファイルを生成
 + フォーマット： [file1Path,startLine,endLine,file2Path,startLine,endline]
++ 出力先： ./result/task*/detection*/blockPair.csv
 ```
-python3 scripts/blockPairOutput.py taskId detectionId outputFile   
+python3 scripts/blockPairOutput.py taskId detectionId   
 ```
 + **scripts/filePairOutput.py** : CSV形式の出力ファイルを生成
-+ フォーマット： [file1Path,file2Path]
 + MSCCDをファイルレベルクローン検出器として実行する場合に利用. (config.jsonで maxRound を1または0に設定した場合)
++ フォーマット： [file1Path,file2Path]
++ 出力先： ./result/task*/detection*/filePair.csv
 ```
-python3 scripts/filePairOutput.py taskId detectionId outputFile   
+python3 scripts/filePairOutput.py taskId detectionId
 ```
 
 ## Comming soon
