@@ -1,3 +1,9 @@
+## Summary
+多言語対応コードクローン検出ツール MSCCD
+
+https://github.com/zhuwq585/MSCCD よりフォーク
+
+
 ## Features
 
 ICPC2022で採択された論文 https://arxiv.org/pdf/2204.01028.pdf 
