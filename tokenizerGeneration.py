@@ -71,6 +71,7 @@ if __name__ == "__main__":
     configObj   = Config(CONFIG_FILE).getData()
     parserSourcePath  = os.path.abspath(configObj['parser'])
     
+    os.makedirs(parserBuildingPath, exist_ok=True)
     os.system("bash modules/shells/cpResources.sh " + parserSourcePath + " " + parserBuildingPath)
     # os.system("bash modules/shells/cpResources.sh " + parserSourcePath + " " + buildingAbspath)
 
