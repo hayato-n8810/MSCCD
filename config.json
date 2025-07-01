@@ -1,6 +1,6 @@
 {
     "inputProject": [
-        "./dataset/***"
+        "./dataset/"
     ],
     "keywordsList": "./grammarDefinations/javascript/javascript.reserved",
     "languageExtensionName": [
