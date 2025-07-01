@@ -5,7 +5,6 @@ tasks*
 modules/msccd_detector_*
 CodeNetRes_MSCCD
 tokenizers/*
-# tokenizers/*
 *.zip
 getCodeNetRes.py
 *.antlr
@@ -13,3 +12,5 @@ getCodeNetRes.py
 */.vscode
 */.settings
 dockerImage/*
+result/*
+dataset/*
