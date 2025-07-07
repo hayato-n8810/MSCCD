@@ -18,7 +18,7 @@ MSCCD は /root/MSCCD にあります．
 
 最新の MSCCD に更新するには **git pull** を実行してください．
 
-./dockerImage直下にダウンロードしてください
+./dockerImage直下に圧縮ファイルをダウンロードしてください
 
 ```
 docker compose -d
@@ -60,8 +60,8 @@ ANTLR4.8にいくつかのインターフェースとメソッドを追加し、
 + inputProject: 検出対象プロジェクトのパスのリスト
 + keywordsList: キーワードリストのパス（grammarDefinations/{言語名}/***.reserved）
 + languageExtensionName: 対象言語の拡張子
-+ minTokens: クローン検出時のトークンバッグの最小サイズ
-+ minTokensForBagGeneration: トークン化時のトークンバッグの最小サイズ．小さい値を設定すると，クローン検出時のトークンバッグのサイズ範囲が広くなる．大きい値を設定すると，小さなバッグを避けたい場合にトークナイザーの処理が高速化される
++ minTokens: クローン検出時のトークンの最小サイズ
++ minTokensForBagGeneration: トークン化時のトークンの最小サイズ．小さい値を設定すると，クローン検出時のトークンのサイズ範囲が広くなる．大きい値を設定すると，小さなスニペットを避けたい場合にトークナイザーの処理が高速化される
 + detectionThreshold: 類似性閾値（0から1の範囲の数値）．コードペアの重なり類似性が閾値を超える場合，それらをクローンと見なす．閾値を高くすると精度が向上し再現率が低下し，逆もまた然り．
 + maxRound: 検出する最大粒度値
 + tokenizer: 生成されたトークナイザーの名前（parserConfig.jsonの "grammarName" と同じ）
