@@ -1,7 +1,7 @@
 import csv, sys
 
 def filter_keyword_pair(csv_path, output_path, keyword):
-    """ファイルパスを持つcsvから指定したキーワードを含むものを抽出
+    """コードクローンペアCSVからパスに指定したキーワードを含むペアを抽出
 
     Args:
         csv_path (str): csvのパス
@@ -22,6 +22,7 @@ else:
     # タスクIDと検出IDを入力から取得
     taskId = sys.argv[1]
     detectionId = sys.argv[2]
+    keyword = sys.argv[3]
 
     # 実行
-    filter_keyword_pair(f'./result/task{taskId}/detection{detectionId}/blockPair.csv', f'./result/task{taskId}/detection{detectionId}/blockPair_jsPerf.txt', "jsPerf")
+    filter_keyword_pair(f'./result/task{taskId}/detection{detectionId}/blockPair.csv', f'./result/task{taskId}/detection{detectionId}/pair_target_{keyword}.txt', keyword)

@@ -126,6 +126,13 @@ python3 scripts/blockPairOutput.py taskId detectionId
 ```
 python3 scripts/filePairOutput.py taskId detectionId
 ```
++ **scripts/filePairExtract.py** : TXT形式の出力ファイルを生成
++ 検出したファイルペアからあるキーワードをパスに含むファイルとペアになっている箇所を抽出する
++ フォーマット： [file1Path,file2Path]
++ 出力先： ./result/task{taskId}/detection{detectionId}/pair_target_{keyword}.txt
+```
+python3 scripts/filePairExtract.py taskId detectionId keyword
+```
 
 ## Comming soon
 
