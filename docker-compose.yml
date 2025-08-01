@@ -7,3 +7,4 @@ services:
     tty: true
     volumes:
       - .:/works
+      - ../repository:/works/dataset
